@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { transparentize } from 'polished';
 
 const COLORS = {
-    red: '#F84735',
-    primary: '#0099FF',
-    foreground: '#274060',
-    white: '#FFFFFF'
+    red: 'var(--red-color)',
+    primary: 'var(--primary-color)',
+    foreground: 'var(--foreground-color)',
+    white: 'var(--white-color)'
 }
 
 const THEME = {
@@ -13,29 +13,29 @@ const THEME = {
         bg: COLORS.red,
         color: COLORS.white,
         onHover: `
-            box-shadow: 0 3px 6px rgba(248, 71, 53,.2);
+            box-shadow: 0 3px 6px var(--red-color-rgba);
         `,
         desabled: {
             color: COLORS.red,
-            bg: transparentize(0.75, COLORS.red)
+            bg: transparentize(0.75, '#F84735')
         }
     },
     primary: {
         bg: COLORS.primary,
         color: COLORS.white,
         onHover: `
-        box-shadow: 0 3px 6px rgba(0, 153, 255,.2);
+        box-shadow: 0 3px 6px var(--primary-color-rgba);
     `,
         desabled: {
             color: COLORS.white,
-            bg: transparentize(0.44, COLORS.primary)
+            bg: transparentize(0.44, '#0099FF')
         }
     },
     text: {
         bg: 'transparent',
         color: COLORS.foreground,
         onHover: `
-       border-color: #274060;
+       border-color: var(--foreground-color);
     `,
         desabled: {
             color: COLORS.foreground,
