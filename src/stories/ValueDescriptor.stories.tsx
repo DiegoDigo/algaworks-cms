@@ -3,7 +3,7 @@ import { Story, ComponentMeta } from '@storybook/react';
 import ValueDescriptor, { ValueDescriptorProps } from '../components/ValueDescriptor';
 
 export default {
-  title: 'Example/ValueDescriptor',
+  title: 'Components/ValueDescriptor',
   component: ValueDescriptor,
   // argTypes: {
   //   backgroundColor: { control: 'color' },

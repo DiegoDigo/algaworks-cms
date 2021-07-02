@@ -2,7 +2,7 @@ import { Story, ComponentMeta } from '@storybook/react';
 import Input, { InputProps } from '../components/Input';
 
 export default {
-    title: 'Example/Input',
+    title: 'Components/Input',
     component: Input,
 } as ComponentMeta<typeof Input>;
 
